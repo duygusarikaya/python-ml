@@ -9,7 +9,7 @@ Use a Naive Bayes Classifier to identify emails by their authors
 """
     
 import sys
-from ClassifyNB import classify
+from nb_classifier import classify
 sys.path.append("../tools/")
 from email_preprocess import preprocess
 

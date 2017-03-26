@@ -1,12 +1,14 @@
 #!/usr/bin/python
 
-""" Complete the code in ClassifyNB.py with the sklearn
+""" Complete the code in nb_classifier.py with the sklearn
     Naive Bayes classifier to classify the terrain data.
 """
 
+import sys
+from nb_classifier import classify
+sys.path.append("../tools/")
 from prep_terrain_data import make_terrain_data
 from class_vis import pretty_picture, output_image
-from ClassifyNB import classify
 
 features_train, labels_train, features_test, labels_test = make_terrain_data()
 
@@ -25,7 +27,7 @@ print accuracy
 
 # draw the decision boundary with the text points overlaid
 pretty_picture(clf, features_test, labels_test)
-output_image("test.png", "png", open("test.png", "rb").read())
+output_image("svm_speed.png", "png", open("svm_speed.png", "rb").read())
 
 
 

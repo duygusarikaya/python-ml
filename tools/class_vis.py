@@ -45,7 +45,7 @@ def pretty_picture(clf, x_test, y_test):
     plt.xlabel("bumpiness")
     plt.ylabel("grade")
 
-    plt.savefig("test.png")
+    plt.savefig("svm_speed.png")
 
 
 def output_image(name, format, bytes):

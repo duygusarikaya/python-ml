@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+from time import time
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
 
@@ -9,10 +10,14 @@ def classify(features_train, labels_train, features_test, labels_test):
     # create classifier
     # fit the classifier on the training features and labels
     clf = GaussianNB()
+    t0 = time()
     clf.fit(features_train, labels_train)
+    print "Training time:", round(time() - t0, 3), "s"
 
     # use the trained classifier to predict labels for the test features
+    t0 = time()
     pred = clf.predict(features_test)
+    print "Prediction time:", round(time() - t0, 3), "s"
 
     # calculate and return the accuracy on the test data
 

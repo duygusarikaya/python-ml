@@ -27,7 +27,7 @@ print accuracy
 
 # draw the decision boundary with the text points overlaid
 pretty_picture(clf, features_test, labels_test)
-output_image("svm_speed.png", "png", open("svm_speed.png", "rb").read())
+output_image("dt_speed.png", "png", open("dt_speed.png", "rb").read())
 
 
 

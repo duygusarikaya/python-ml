@@ -26,8 +26,8 @@ clf, accuracy = classify(features_train, labels_train, features_test, labels_tes
 print accuracy
 
 # draw the decision boundary with the text points overlaid
-pretty_picture(clf, features_test, labels_test)
-output_image("dt_speed.png", "png", open("dt_speed.png", "rb").read())
+pretty_picture(clf, features_test, labels_test, "nb_speed.png")
+output_image("nb_speed.png", "png", open("nb_speed.png", "rb").read())
 
 
 

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-""" lecture and example code for decision tree unit """
+""" code for decision tree """
 
 import sys
 from dt_classifier import classify
@@ -14,5 +14,5 @@ features_train, labels_train, features_test, labels_test = make_terrain_data()
 clf, accuracy = classify(features_train, labels_train, features_test, labels_test)
 
 
-pretty_picture(clf, features_test, labels_test)
+pretty_picture(clf, features_test, labels_test, "dt_speed.png")
 output_image("dt_speed.png", "png", open("dt_speed.png", "rb").read())

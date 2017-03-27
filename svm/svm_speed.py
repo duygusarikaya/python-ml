@@ -10,5 +10,5 @@ features_train, labels_train, features_test, labels_test = make_terrain_data()
 clf, accuracy = classify(features_train, labels_train, features_test, labels_test)
 
 # draw the decision boundary with the text points overlaid
-pretty_picture(clf, features_test, labels_test)
-output_image("dt_speed.png", "png", open("dt_speed.png", "rb").read())
+pretty_picture(clf, features_test, labels_test, "svm_speed.png")
+output_image("svm_speed.png", "png", open("svm_speed.png", "rb").read())

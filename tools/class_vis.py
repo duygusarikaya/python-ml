@@ -13,7 +13,7 @@ warnings.filterwarnings("ignore")
 matplotlib.use('agg')
 
 
-def pretty_picture(clf, x_test, y_test):
+def pretty_picture(clf, x_test, y_test, name):
     x_min = 0.0
     x_max = 1.0
     y_min = 0.0
@@ -45,7 +45,7 @@ def pretty_picture(clf, x_test, y_test):
     plt.xlabel("bumpiness")
     plt.ylabel("grade")
 
-    plt.savefig("dt_speed.png")
+    plt.savefig(name)
 
 
 def output_image(name, format, bytes):
